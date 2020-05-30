@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EquipActivity"
+    android:orientation="horizontal"
+    android:background="@mipmap/shop">
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <ImageButton
+            android:id="@+id/ib_sword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/is7" />
+        <TextView
+            android:id="@+id/tv_equip_life"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ib_sword"
+            android:text="生命值"/>
+        <TextView
+            android:id="@+id/tv_equip_firepower"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ib_sword"
+            android:text="火力值"/>
+        <TextView
+            android:id="@+id/tv_equip_armor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ib_sword"
+            android:text="装甲值"/>
+    </LinearLayout>
+<!--    <LinearLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical">-->
+<!--        <ImageButton-->
+<!--            android:id="@+id/ib_sword1"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@mipmap/change59" />-->
+<!--        <TextView-->
+<!--            android:id="@+id/tv_equip_life1"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/ib_sword"-->
+<!--            android:text="生命值"/>-->
+<!--        <TextView-->
+<!--            android:id="@+id/tv_equip_firepower1"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/ib_sword"-->
+<!--            android:text="火力值"/>-->
+<!--        <TextView-->
+<!--            android:id="@+id/tv_equip_armor1"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/ib_sword"-->
+<!--            android:text="装甲值"/>-->
+<!--    </LinearLayout>-->
+</LinearLayout>

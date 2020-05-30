@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        style="@style/MyStyle1"
+        android:text="this is first line"
+        />
+    <TextView
+        style="@style/MyStyle2"
+        android:text="this is second line"
+        />
+</LinearLayout>
