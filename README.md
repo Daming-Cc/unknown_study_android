@@ -4,6 +4,7 @@
 - [背景](#背景)
 - [安装](#安装)
 - [使用说明](#使用说明)
+	- [克隆说明](#克隆说明)
 - [相关仓库](#相关仓库)
 - [维护者](#维护者)
 - [如何贡献](#如何贡献)
@@ -23,6 +24,8 @@
 
 ## 使用说明
 
+### 克隆说明
+
 1. 点击左上角File
     ![Alt text](https://github.com/Daming-Cc/unknown_study_java/blob/master/images/File.png)
 2. 选择Import选项
@@ -34,6 +37,7 @@
     ![Alt text](https://github.com/Daming-Cc/unknown_study_java/blob/master/images/Address.png)
 5. 然后点击Finish即可
     ![Alt text](https://github.com/Daming-Cc/unknown_study_java/blob/master/images/Finish.png)
+
 ## 相关仓库
 
 - [unknown study java](https://github.com/Daming-Cc/unknown_study_java) — 💌 unknown的java😀
