@@ -25,7 +25,7 @@
 ## 使用说明
 
 ### 克隆说明
-
+    在搭了在搭了别看了- - 
 1. 点击左上角File
     ![Alt text](https://github.com/Daming-Cc/unknown_study_java/blob/master/images/File.png)
 2. 选择Import选项
@@ -48,4 +48,4 @@
 
 ## 如何贡献
 
-非常欢迎你的加入！[提一个 Issue](https://github.com/Daming-Cc/unknown_study_java/issues/new) 或者提交一个 Pull Request。
+非常欢迎你的加入！[提一个 Issue](https://github.com/Daming-Cc/unknown_study_android/issues/new) 或者提交一个 Pull Request。
