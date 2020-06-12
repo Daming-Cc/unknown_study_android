@@ -17,10 +17,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.util.ArrayList;
-import java.util.List;
-
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public abstract class MainActivity extends AppCompatActivity implements View.OnClickListener {
     //声明布局中的各个控件
     private EditText etName;
     private EditText etPhone;
@@ -30,6 +27,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button btnDelete;
     private ConnectOpenHelper helper;
     private ListView lvShow;
+    private String [] name;
+    private int [] phone;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +36,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         helper = new ConnectOpenHelper(this);
         SQLiteDatabase db = helper.getWritableDatabase();
         initView();
+        name = new String[]{"华为","小米","苹果"};
+        phone = new int[]{4000,5000,6000};
+        ListView listView = findViewById(R.id.lv_show);
+        listView.setAdapter((ListAdapter) new extends_baseadapter(this,name,phone));
+
     }
     private void initView(){
         etName = findViewById(R.id.et_name);
@@ -52,7 +56,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnUpdate.setOnClickListener(this);
         btnDelete.setOnClickListener(this);
         lvShow = findViewById(R.id.lv_show);
-
     }
     public void onClick(View v){
         SQLiteDatabase db;
@@ -73,21 +76,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             //查询记录的代码
             case R.id.btn_query:
                 db = helper.getReadableDatabase();
-                //数据源的准备
                 Cursor cursor = db.query("connectperson",null,null,null,null,null,null,null);
-                List<PersonItem> persons = new ArrayList<PersonItem>();
-                while (cursor.moveToNext()){
-                    PersonItem person = new PersonItem();
-                    person.setName(cursor.getString(0));
-                    person.setPhone(cursor.getString(1));
-                    persons.add(person);
-                    person = null;
-                }
-                lvShow.setAdapter(new ConnectAdapter(this,persons));
-                cursor.close();
+                if (cursor.getColumnCount()==0){
+                    lvShow.set
+                }else {
+                    cursor.moveToFirst();
+                    tvShow.setText("姓名"+cursor.getString(0)+"电话"+cursor.getString(1));
+                    while (cursor.moveToNext()){
+                        //1.参考天气预报案例
+                        //2.参与播放器Adapter - BaseAdapter
+                        //3.lv.setAdapter(new)
+                        tvShow.append("\n姓名"+cursor.getString(0)+"电话"+cursor.getString(1));
+                    }
                 db.close();
                 break;
-                //查询记录的代码
+            //查询记录的代码
 /*            case R.id.btn_query:
                 db = helper.getReadableDatabase();
                 Cursor cursor = db.query("connectperson",null,null,null,null,null,null,null);
@@ -151,4 +154,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         }
     }
+
+    //可以返回数据源的条目数
+    public abstract int getCount();
+
+    //返回view对象
+    public abstract View getView(int position, View convertView, ViewGroup parent);
+
+    //返回条目内容
+    public abstract Object getItem(int position);
+
+    //返回条目的ID
+    public abstract long getItemId(int position);
 }
