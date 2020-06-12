@@ -90,11 +90,19 @@
             android:background="#ACD6FF"
             android:text="删除" />
     </LinearLayout>
-    <TextView
+<!--    <TextView-->
+<!--        android:id="@+id/tv_show"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="25dp"-->
+<!--        android:layout_below="@+id/ll_btn"-->
+<!--        android:textSize="20sp" />-->
+    <ListView
         android:id="@+id/tv_show"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_marginTop="25dp"
-        android:layout_below="@+id/ll_btn"
-        android:textSize="20sp" />
+        android:layout_below="@+id/ll_btn">
+
+    </ListView>
 </RelativeLayout>
