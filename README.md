@@ -34,14 +34,14 @@
 1. 点击左上角File选择open选项
     ![Alt text](https://github.com/Daming-Cc/unknown_study_android/blob/master/images/File.png)
 2. 选择克隆项目的地址位置的项目名称后Finish
-    ![Alt text](https://github.com/Daming-Cc/unknown_study_android/blob/master/images/Address.png)  
+    ![Alt text](https://github.com/Daming-Cc/unknown_study_android/tree/master/Images/Address.png)  
 #### studio搭建
 1. 在左侧Phone的选项中选择右边所需要的各类样式device然后Next
-    ![Alt text](https://github.com/Daming-Cc/unknown_study_android/blob/master/images/studio.png)   
+    ![Alt text](https://github.com/Daming-Cc/unknown_study_android/tree/master/images/studio.png)   
 2. 然后点击Next即可
-    ![Alt text](https://github.com/Daming-Cc/unknown_study_android/blob/master/images/select_hardware.png)
+    ![Alt text](https://github.com/Daming-Cc/unknown_study_android/tree/master/images/select_hardware.png)
 3. 选择所需要的安卓版本即可，未下载需点击Download下载，然后Next后即可Finish
-    ![Alt text](https://github.com/Daming-Cc/unknown_study_android/blob/master/images/select_system.png)  
+    ![Alt text](https://github.com/Daming-Cc/unknown_study_android/tree/master/images/select_system.png)  
 
 
 ## 相关仓库
